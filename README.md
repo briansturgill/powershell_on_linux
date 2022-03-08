@@ -66,6 +66,17 @@ Examples:
 * linuxSysCalls.ps1 - shows how easy it is to make external "C" calls
 * gtk.ps1 - Small GtkSharp example. Make sure you read comments in file before running.
 
+## Exploring PowerShell
+Type these:   # Comments are after a '#'
+
+* Get-Help
+
+* help Get-Help
+
+* get-command | get-random | help    # Selects a random comand for you to learn about.
+
+* Get-Help about_      # A list of the more lengthy topical articles.
+
 ## Debugging PowerShell scripts under all platforms.
 Visual Studio Code [an open source editor by Microsoft] has an extension
 for PowerShell (called PowerShell by Microsoft). This extension allows
