@@ -3,22 +3,28 @@
 This is a guide for Linux people about using PowerShell on Linux.
 
 PowerShell is for ADMINISTRATORS and DEVELOPERS.
+<br>
 It is not the general interface a Unix/Linux shell is.
-It would be possible to create a softer environment for non-power users.
 
 ## Installation
 
-To install PowerShell use: snap install powershell --classic
+To install PowerShell use: <code>snap install powershell --classic</code>
+
 The "--classic" gives the app access to your whole file system. [Necessary for a shell!]
+
 If you don't use snap, there are alternate means:
-[Alternate ways to install PowerShell on Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/install-other-linux?view=powershell-7.2#installation-using-a-binary-archive-file)
+
+* [Alternate ways to install PowerShell on Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/install-other-linux?view=powershell-7.2#installation-using-a-binary-archive-file)
 
 
 ## IMPORTANT: Invocation
 To invoke PowerShell, use "pwsh".
+
 On Windows, the new PowerShell is also invoked with "pwsh".
+
 But also on Windows there is "powershell", which invokes an older variant that older extensions
 still work with.
+
 In WSL (Linux inside of Windows) you can get to PowerShell from bash by using "powershell.exe"...
 but as it will not have access to Linux commands, I advise installing the Linux powershell there.
 Note that WSL does not support snap, I used this [alternate way to install](https://docs.microsoft.com/en-us/powershell/scripting/install/install-other-linux?view=powershell-7.2#installation-using-a-binary-archive-file).
@@ -57,12 +63,12 @@ function ls {
 
 ## Examples of Linux specialized usage of PowerShell
 Examples:
-linuxSysCalls.ps1 - shows how easy it is to make external "C" calls
-gtk.ps1 - Small GtkSharp example. Make sure you read comments in file before running.
+* linuxSysCalls.ps1 - shows how easy it is to make external "C" calls
+* gtk.ps1 - Small GtkSharp example. Make sure you read comments in file before running.
 
 ## Debugging PowerShell scripts under all platforms.
 Visual Studio Code [an open source editor by Microsoft] has an extension
-for PowerShell [Called PowerShell by Microsoft.] This extension allows
+for PowerShell (called PowerShell by Microsoft). This extension allows
 line by line debugging of powershell screipts, along with formatting and
 colorization.
 
@@ -75,18 +81,23 @@ or see: [Visual Studio Code on Linux](https://code.visualstudio.com/docs/setup/l
 
 ### To install the extension.
 [Extensions Icon in VSCode - 5th button on left side bar: 4 squares, top right raised.](vscode_extensions_icon.png)
+
 Click on the Extensions button, type PowerShell in the search box.
+
 Click in the list PowerShell (by Microsoft).
+
 In the main editor screen PowerShell information will appear... click Install.
 IMPORTANT, Restart VSCode!
 
 ### Debugging with the PowerShell extension...
-Create a directory somewhere using your shell and then cd to it and type:
+* Create a directory somewhere using your shell and then cd to it and type:
     code .
 
-Click the "explorer" button at the top left (looks like two sheets of paper).
-Now move your mouse near the name of the directory and click the new file button...
-Create a file, named it "demo.ps1".
+* Click the "explorer" button at the top left (looks like two sheets of paper).
+
+* Now move your mouse near the name of the directory and click the new file button...
+
+* Create a file, named it "demo.ps1".
 ```powershell
 #!/usr/bin/pwsh
 
@@ -101,7 +112,7 @@ if ($percent_used -gt 90) {
 }
 ```
 
-To the left of line 3 single click twice (pause between)... this will set a breakpoint.
+* To the left of line 3 single click twice (pause between)... this will set a breakpoint.
 A red "led" will appear there.
 
 * From the "Run" menu select "Add Configuration..."
