@@ -52,10 +52,11 @@ But sadly, the winner of the top prize for making a functional programming langu
 * [Rash (based on Racket)[https://docs.racket-lang.org/rash/index.html]
 
 And of course someone had to make a shell based on the brainfuck programming language...
-[brainfuck-shell](https://snapcraft.io/brainfuck-shell)
+
+* [Brainfuckshell](https://snapcraft.io/brainfuck-shell)
 
 Not a shell, but an important addition for any Linux shell, the "sl" command:
-
+<br>
 WARNING: under PowerShell there's a default alias "sl"... so either delete/override that, or say /usr/games/sl:
 
 * [sudo apt install sl](https://github.com/thekakester/sl)

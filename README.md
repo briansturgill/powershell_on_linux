@@ -81,15 +81,17 @@ or see: [Visual Studio Code on Linux](https://code.visualstudio.com/docs/setup/l
 
 ### To install the extension.
 
-Click on the Extensions button (5th button on left side bar: image is 4 squares, top right raised),
-type PowerShell in the search box.
+Click on the Extensions button (5th button on left side bar: image is 4 squares, top right raised).
+
+Type PowerShell in the search box.
 
 [Image of Extensions Icon in VSCode](vscode_extensions_icon.png)
 
 Click in the list PowerShell (by Microsoft).
 
 In the main editor screen PowerShell information will appear... click Install.
-IMPORTANT, Restart VSCode!
+
+IMPORTANT: Restart VSCode!
 
 ### Debugging with the PowerShell extension...
 * Create a directory somewhere using your shell and then cd to it and type:
