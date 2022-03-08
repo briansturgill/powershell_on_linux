@@ -44,12 +44,13 @@ There are many attempts to make Guile (Gnu's Scheme) into a shell... why?
 
 * [gash](https://github.com/szos/gash)
 
-* [scsh](https://cvs.savannah.gnu.org/viewvc/guile/guile/guile-scsh/
-[I actually started working on a guile shell that parses a bash-like command line to a guile form.](https://news.ycombinator.com/item?id=18560115https://news.ycombinator.com/item?id=18560115)
+* [scsh](https://cvs.savannah.gnu.org/viewvc/guile/guile/guile-scsh/)
+
+* [I actually started working on a guile shell that parses a bash-like command line to a guile form.](https://news.ycombinator.com/item?id=18560115https://news.ycombinator.com/item?id=18560115)
 
 But sadly, the winner of the top prize for making a functional programming language into a shell goes to:
 
-* [Rash (based on Racket)[https://docs.racket-lang.org/rash/index.html]
+* [Rash](based on Racket)[https://docs.racket-lang.org/rash/index.html]
 
 And of course someone had to make a shell based on the brainfuck programming language...
 
